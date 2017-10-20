@@ -64,6 +64,70 @@
       "title": "Plazas Outlet Guadalajara",
       "addToNavigation": true,
       "icon": "details"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "newsView",
+      "components": [],
+      "title": "Newsletter",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "promocionesView",
+      "components": [],
+      "title": "Promociones",
+      "addToNavigation": true,
+      "icon": "play"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "contactoView",
+      "components": [],
+      "title": "Contacto",
+      "addToNavigation": true,
+      "icon": "play"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "privacidadView",
+      "components": [],
+      "title": "Aviso de Privacidad",
+      "addToNavigation": true,
+      "icon": "play"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "tiendasView",
+      "components": [],
+      "title": "Tiendas",
+      "addToNavigation": true,
+      "icon": "play"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "novedadesView",
+      "components": [],
+      "title": "Novedades",
+      "addToNavigation": true,
+      "icon": "play"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "eventosView",
+      "components": [],
+      "title": "Eventos",
+      "addToNavigation": true,
+      "icon": "play"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "ubicacionView",
+      "components": [],
+      "title": "Ubicacion",
+      "addToNavigation": true,
+      "icon": "globe"
     }
   ],
   "dataProviders": [],

@@ -27,5 +27,29 @@
   },
   "plazasView": {
     "title": "Plazas Outlet Guadalajara"
+  },
+  "newsView": {
+    "title": "Newsletter"
+  },
+  "promocionesView": {
+    "title": "Promociones"
+  },
+  "contactoView": {
+    "title": "Contacto"
+  },
+  "privacidadView": {
+    "title": "Aviso de Privacidad"
+  },
+  "tiendasView": {
+    "title": "Tiendas"
+  },
+  "novedadesView": {
+    "title": "Novedades"
+  },
+  "eventosView": {
+    "title": "Eventos"
+  },
+  "ubicacionView": {
+    "title": "Ubicacion"
   }
 }
