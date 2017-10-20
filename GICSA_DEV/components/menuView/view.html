@@ -1,17 +1,22 @@
 <div data-role="view" data-title="View" data-layout="main" data-model="app.menuView" data-show="app.menuView.onShow" data-after-show="app.menuView.afterShow" id="menuViewScreen" class="screen">
     <header data-role="header">
-        <div data-role="navbar" class="header-text">
-
-            <span data-bind="text: strings.menuView.title"></span>
-
+        <div data-role="navbar" class="header-text" style="background-image:linear-gradient(to right, #f6a426 0%, #ff8a00 100%);">
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
-
         </div>
     </header>
-
-
-    <!-- START_CUSTOM_CODE_menuView -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-    <!-- END_CUSTOM_CODE_menuView -->
+    <div class="grid">
+        <div class="cols-10" style="position:absolute;top:0px;width:100%;">
+            <img src="images/Home.png" style="width:100%;"/>
+        </div>
+        <div class="cols-10 tac" style="text-align:center;padding-top:75px;position:absolute;width:100%;">
+            <select style="color: #afafaf;padding: 10px 15px;border-radius: 3px;">
+                <option>SELECCIONAR PLAZA</option>
+                <option>FORUM CUERNAVACA</option>
+                <option>LA ISLA PUERTO VALLARTA</option>
+                <option>PASEO ARCOS BOSQUES</option>
+                <option>EXPLANADA CANCUN</option>
+                <option>LAS PLAZAS OUTLET GUADALAJARA</option>
+            </select>
+        </div>
+    </div>
 </div>
