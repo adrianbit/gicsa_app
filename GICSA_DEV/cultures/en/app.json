@@ -5,6 +5,27 @@
     "qrCodeScan": "Scan"
   },
   "home": {
-    "title": "Home View"
+    "title": "Splash Screen"
+  },
+  "popupView": {
+    "title": "PopUp"
+  },
+  "menuView": {
+    "title": "Menu"
+  },
+  "forumView": {
+    "title": "Forum Cuernavaca"
+  },
+  "laIslaView": {
+    "title": "La Isla Puerto Vallarta"
+  },
+  "paseoView": {
+    "title": "Paseo Arcos Bosques"
+  },
+  "explanadaView": {
+    "title": "Explanada Cancun"
+  },
+  "plazasView": {
+    "title": "Plazas Outlet Guadalajara"
   }
 }

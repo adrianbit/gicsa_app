@@ -17,31 +17,21 @@
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/plazasView/index.js"></script>
+    <script src="components/explanadaView/index.js"></script>
+    <script src="components/paseoView/index.js"></script>
+    <script src="components/laIslaView/index.js"></script>
+    <script src="components/forumView/index.js"></script>
+    <script src="components/menuView/index.js"></script>
+    <script src="components/popupView/index.js"></script>
     <script src="components/home/index.js"></script>
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
             </div>
         </header>
-        <footer data-role="footer">
-            <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a>
-            </div>
-            <div id="navigation-container-more" style="display: none">
-            </div>
-        </footer>
-    </div>
-
-
-    <div id="navigation-show-more-view" data-role="view" data-title="Show More" data-layout="main">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-bind="text: strings._app.showMoreTitle"></span>
-            </div>
-        </header>
-        <ul data-role="listview" data-style="inset" data-click="app.listViewClick">
-        </ul>
     </div>
 
     <div data-role="layout" data-id="main-nonav">
@@ -50,8 +40,24 @@
                 <span data-role="view-title"></span>
             </div>
         </header>
-        <footer data-role="footer">
-        </footer>
+    </div>
+
+    <div id="appDrawer" data-role="drawer" data-title="Navigation">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+        <ul id="navigation-container" data-role="listview">
+            <li><a href="components/home/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a></li>
+            <li><a href="components/popupView/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.popupView.title"></span></a></li>
+            <li><a href="components/menuView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.menuView.title"></span></a></li>
+            <li><a href="components/forumView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.forumView.title"></span></a></li>
+            <li><a href="components/laIslaView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.laIslaView.title"></span></a></li>
+            <li><a href="components/paseoView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.paseoView.title"></span></a></li>
+            <li><a href="components/explanadaView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.explanadaView.title"></span></a></li>
+            <li><a href="components/plazasView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.plazasView.title"></span></a></li>
+        </ul>
     </div>
     <div id="notify" class="notify-pop-up">
         <span class="notify-pop-up__content"></span>

@@ -5,17 +5,71 @@
       "type": "kendo-ui-mobile:view",
       "name": "home",
       "components": [],
-      "title": "Home View",
+      "title": "Splash Screen",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "popupView",
+      "components": [],
+      "title": "PopUp",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "menuView",
+      "components": [],
+      "title": "Menu",
+      "addToNavigation": true,
+      "icon": "details"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "forumView",
+      "components": [],
+      "title": "Forum Cuernavaca",
+      "addToNavigation": true,
+      "icon": "details"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "laIslaView",
+      "components": [],
+      "title": "La Isla Puerto Vallarta",
+      "addToNavigation": true,
+      "icon": "details"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "paseoView",
+      "components": [],
+      "title": "Paseo Arcos Bosques",
+      "addToNavigation": true,
+      "icon": "details"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "explanadaView",
+      "components": [],
+      "title": "Explanada Cancun",
+      "addToNavigation": true,
+      "icon": "details"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "plazasView",
+      "components": [],
+      "title": "Plazas Outlet Guadalajara",
+      "addToNavigation": true,
+      "icon": "details"
     }
   ],
   "dataProviders": [],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
+  "navigation": "drawer",
   "view": "home",
-  "transition": "slide",
-  "showMoreTab": true,
   "skin": "nova",
   "skinMainColor": "#32364c",
   "skinTextColor": "#ffffff",
