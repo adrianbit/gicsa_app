@@ -133,7 +133,7 @@
   "dataProviders": [],
   "name": "kendoUiMobileApp",
   "navigation": "drawer",
-  "view": "home",
+  "view": "menuView",
   "skin": "nova",
   "skinMainColor": "#32364c",
   "skinTextColor": "#ffffff",

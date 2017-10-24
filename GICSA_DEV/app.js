@@ -19,7 +19,7 @@
         $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 skin: 'nova',
-                initial: 'components/home/view.html'
+                initial: 'components/menuView/view.html'
             });
 
             kendo.bind($('.navigation-link-text'), app.navigation.viewModel);

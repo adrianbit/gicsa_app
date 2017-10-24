@@ -1,22 +1,17 @@
 <div data-role="view" data-title="View" data-layout="main" data-model="app.laIslaView" data-show="app.laIslaView.onShow" data-after-show="app.laIslaView.afterShow" id="laIslaViewScreen" class="screen">
     <header data-role="header">
-        <div data-role="navbar" class="header-text" style="background-image:linear-gradient(to right, #26d0c9 0%, #28d0c9 100%);">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.laIslaView.title"></span>
+
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+
         </div>
     </header>
-    <div class="grid">
-        <div class="cols-10" style="position:absolute;top:0px;width:100%;">
-            <img src="images/Isla.png" style="width:100%;"/>
-        </div>
-        <div class="cols-10 tac" style="text-align:center;padding-top:90px;position:absolute;width:100%;">
-            <select style="color: #afafaf;padding: 10px 15px;border-radius: 3px;">
-                <option>SELECCIONAR PLAZA</option>
-                <option >FORUM CUERNAVACA</option>
-                <option selected>LA ISLA PUERTO VALLARTA</option>
-                <option>PASEO ARCOS BOSQUES</option>
-                <option>EXPLANADA CANCUN</option>
-                <option>LAS PLAZAS OUTLET GUADALAJARA</option>
-            </select>
-        </div>
-    </div>
+
+
+    <!-- START_CUSTOM_CODE_laIslaView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_laIslaView -->
 </div>

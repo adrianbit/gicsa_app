@@ -1,24 +1,17 @@
 <div data-role="view" data-title="View" data-layout="main" data-model="app.ubicacionView" data-show="app.ubicacionView.onShow" data-after-show="app.ubicacionView.afterShow" id="ubicacionViewScreen" class="screen">
     <header data-role="header">
-        
-        <div data-role="navbar" class="header-text" style="background-image:linear-gradient(to right, #80bd01 0%, #6b9a08 100%);">
-            <span>UBICACIÓN</span>
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.ubicacionView.title"></span>
+
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+
         </div>
     </header>
-    <div class="grid" style="background-image:linear-gradient(to right, #80bd01 0%, #6b9a08 100%);padding:10px 20px;">
-        <div class="tac" style="text-align:center;padding-top:10px;width:100%;">
-            <select style="color: #afafaf;padding: 10px 15px;border-radius: 3px;">
-                <option>SELECCIONAR PLAZA</option>
-                <option selected>FORUM CUERNAVACA</option>
-                <option>LA ISLA PUERTO VALLARTA</option>
-                <option>PASEO ARCOS BOSQUES</option>
-                <option>EXPLANADA CANCUN</option>
-                <option>LAS PLAZAS OUTLET GUADALAJARA</option>
-            </select>
-            </br></br></br>
-        </div>
-        <div style="width: 100%"><iframe width="100%" height="400" src="https://www.mapsdirections.info/crear-un-mapa-de-google/map.php?width=100%&height=600&hl=en&q=Forum%20Cuernavaca+(GICSA)&ie=UTF8&t=&z=14&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/crear-un-mapa-de-google/">Crear mapa interactivo</a> by <a href="https://www.mapsdirections.info/">Mapa España</a></iframe></div><br />
-        </br></br></br>&nbsp;
-    </div>
+
+
+    <!-- START_CUSTOM_CODE_ubicacionView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_ubicacionView -->
 </div>
