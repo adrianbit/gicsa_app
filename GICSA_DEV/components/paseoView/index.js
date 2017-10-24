@@ -2,7 +2,9 @@
 
 app.paseoView = kendo.observable({
     onShow: function() {},
-    afterShow: function() {}
+    afterShow: function() {
+        $("#selectedPlazaPaseo").change(function() { goToView($("#selectedPlazaPaseo").val()); });
+    }
 });
 app.localization.registerView('paseoView');
 

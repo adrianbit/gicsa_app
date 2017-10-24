@@ -2,7 +2,9 @@
 
 app.forumView = kendo.observable({
     onShow: function() {},
-    afterShow: function() {}
+    afterShow: function() {
+        $("#selectedPlazaForum").change(function() { goToView($("#selectedPlazaForum").val()); });
+    }
 });
 app.localization.registerView('forumView');
 

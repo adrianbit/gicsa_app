@@ -2,7 +2,9 @@
 
 app.plazasView = kendo.observable({
     onShow: function() {},
-    afterShow: function() {}
+    afterShow: function() {
+        $("#selectedPlazaPlazas").change(function() { goToView($("#selectedPlazaPlazas").val()); });
+    }
 });
 app.localization.registerView('plazasView');
 

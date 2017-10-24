@@ -2,7 +2,9 @@
 
 app.explanadaView = kendo.observable({
     onShow: function() {},
-    afterShow: function() {}
+    afterShow: function() {
+        $("#selectedPlazaExplanada").change(function() { goToView($("#selectedPlazaExplanada").val()); });
+    }
 });
 app.localization.registerView('explanadaView');
 

@@ -2,14 +2,18 @@
 
 var selectedPlaza = "";
 var emailNewsletter = "";
+var currentApp = app;
 
 app.menuView = kendo.observable({
     onShow: function() {},
     afterShow: function() {
-        
     }
 });
 app.localization.registerView('menuView');
+
+
+// START_CUSTOM_CODE_menuView
+// Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
 function popUp1(){
     selectedPlaza = $("#selectPopUp1").val();
@@ -21,39 +25,23 @@ function popUp1(){
 
 function popUp2(){
     emailNewsletter = $("#emailNewsletter").val();
-    if (emailNewsletter!=""){
-        $("#headerNavbar").show("");
-        var app = new kendo.mobile.Application();
-        if (selectedPlaza=="forumCuernavaca"){
-            app.navigate("components/forumView/view.html");
-        } else if (selectedPlaza=="islaPuerto"){
-            app.navigate("components/laIslaView/view.html");
-        } else if (selectedPlaza=="paseoArcos"){
-            app.navigate("components/paseoView/view.html");
-        } else if (selectedPlaza=="explanadaCancun"){
-            app.navigate("components/explanadaView/view.html");
-        } else if (selectedPlaza=="plazasOutlet"){
-            app.navigate("components/plazasView/view.html");
-        }
+    if (true || emailNewsletter!=""){
+        goToView(selectedPlaza);
     }
 }
 
 function goToView(selectedPlaza){
-    var app = new kendo.mobile.Application();
     if (selectedPlaza=="forumCuernavaca"){
-        app.navigate("components/forumView/view.html");
+        app.mobileApp.navigate("components/forumView/view.html");
     } else if (selectedPlaza=="islaPuerto"){
-        app.navigate("components/laIslaView/view.html");
+        app.mobileApp.navigate("components/laIslaView/view.html");
     } else if (selectedPlaza=="paseoArcos"){
-        app.navigate("components/paseoView/view.html");
+        app.mobileApp.navigate("components/paseoView/view.html");
     } else if (selectedPlaza=="explanadaCancun"){
-        app.navigate("components/explanadaView/view.html");
+        app.mobileApp.navigate("components/explanadaView/view.html");
     } else if (selectedPlaza=="plazasOutlet"){
-        app.navigate("components/plazasView/view.html");
+        app.mobileApp.navigate("components/plazasView/view.html");
     }
 }
-
-// START_CUSTOM_CODE_menuView
-// Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
 // END_CUSTOM_CODE_menuView

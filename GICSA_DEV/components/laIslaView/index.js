@@ -2,7 +2,9 @@
 
 app.laIslaView = kendo.observable({
     onShow: function() {},
-    afterShow: function() {}
+    afterShow: function() {
+        $("#selectedPlazaIsla").change(function() { goToView($("#selectedPlazaIsla").val()); });
+    }
 });
 app.localization.registerView('laIslaView');
 
