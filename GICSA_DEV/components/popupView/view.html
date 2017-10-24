@@ -1,24 +1,37 @@
 <div data-role="view" data-title="View" data-layout="main" data-model="app.popupView" data-show="app.popupView.onShow" data-after-show="app.popupView.afterShow" id="popupViewScreen" class="screen">
     <header data-role="header">
-        <div data-role="navbar" class="header-text" style="background-image:linear-gradient(to right, #352308 0%, #371e00 100%);">
-            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
-        </div>
     </header>
-    <div class="grid">
+    <div class="grid" id="popUp1">
         <div class="cols-10" style="position:absolute;top:0px;width:100%;">
             <img src="images/PopUp.png" style="width:100%;"/>
         </div>
         <div class="cols-10 tac" style="text-align:center;padding-top:50px;position:absolute;width:100%;">
             <span style="color: white;font-size: x-large;font-family: cursive;font-style: italic;">1. Selecciona una plaza</span>
             <br/><br/>
-            <select style="color: #afafaf;padding: 10px 15px;border-radius: 3px;">
-                <option>SELECCIONAR PLAZA</option>
-                <option>FORUM CUERNAVACA</option>
-                <option>LA ISLA PUERTO VALLARTA</option>
-                <option>PASEO ARCOS BOSQUES</option>
-                <option>EXPLANADA CANCUN</option>
-                <option>LAS PLAZAS OUTLET GUADALAJARA</option>
+            <select id="selectPopUp1" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;" onchange="popUp1();">
+                <option value="">SELECCIONAR PLAZA</option>
+                <option value="forumCuernavaca">FORUM CUERNAVACA</option>
+                <option value="islaPuerto">LA ISLA PUERTO VALLARTA</option>
+                <option value="paseoArcos">PASEO ARCOS BOSQUES</option>
+                <option value="explanadaCancun">EXPLANADA CANCUN</option>
+                <option value="plazasOutlet">LAS PLAZAS OUTLET GUADALAJARA</option>
             </select>
+            
+        </div>
+    </div>
+    <div class="grid" id="popUp2" style="display:none;">
+        <div class="cols-10" style="position:absolute;top:0px;width:100%;">
+            <img src="images/PopUp.png" style="width:100%;"/>
+        </div>
+        <div class="cols-10 tac" style="text-align:center;padding-top:110%;position:absolute;width:100%;">
+            <span style="color: white;font-size: x-large;font-family: cursive;font-style: italic;">2. Suscribete y no te pierdas nuestras promociones</span>
+            <br/><br/>
+            <div class="input-group">
+                <input type="text" id="emailNewsletter" class="form-control" placeholder="e-mail" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;">
+                <span class="input-group-btn">
+                    <button onclick="popUp2();" class="btn btn-default" type="button" style="padding: 11px;margin-left:-4px;border:none;font-weight:bold;">&gt;</button>
+                </span>
+            </div>
         </div>
     </div>
 </div>

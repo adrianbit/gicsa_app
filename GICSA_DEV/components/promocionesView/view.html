@@ -1,17 +1,36 @@
-<div data-role="view" data-title="View" data-layout="main" data-model="app.promocionesView" data-show="app.promocionesView.onShow" data-after-show="app.promocionesView.afterShow" id="promocionesViewScreen" class="screen">
+<div data-role="view" data-title="View" data-layout="main" data-model="app.promocionesView" data-show="app.promocionesView.onShow" 
+    data-after-show="app.promocionesView.afterShow" id="promocionesViewScreen" class="screen" style="">
     <header data-role="header">
-        <div data-role="navbar" class="header-text">
-
-            <span data-bind="text: strings.promocionesView.title"></span>
-
+        
+        <div data-role="navbar" class="header-text" style="background-image:linear-gradient(to right, #80bd01 0%, #6b9a08 100%);">
+            <span>MIS PROMOCIONES</span>
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
-
         </div>
     </header>
-
-
-    <!-- START_CUSTOM_CODE_promocionesView -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-    <!-- END_CUSTOM_CODE_promocionesView -->
+    <div class="grid" >
+        <div class="tac" style="text-align:center;padding-top:10px;width:100%;background-image:linear-gradient(to right, #80bd01 0%, #6b9a08 100%);">
+            <select style="color: #afafaf;padding: 10px 15px;border-radius: 3px;">
+                <option>SELECCIONAR PLAZA</option>
+                <option selected>FORUM CUERNAVACA</option>
+                <option>LA ISLA PUERTO VALLARTA</option>
+                <option>PASEO ARCOS BOSQUES</option>
+                <option>EXPLANADA CANCUN</option>
+                <option>LAS PLAZAS OUTLET GUADALAJARA</option>
+            </select>
+            </br></br></br>
+            <div class="cols-10" style="text-align:left;padding:0px 20px;">
+                <span style="font-weight: bold;color: white;font-size: medium;">Ordenar por :</span>
+                <br/>
+                <select style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:100%;">
+                    <option>Categoria</option>
+                </select>
+                <br/>
+                <input type="text" placeholder="Buscar" style="color:white;background-color: rgba(255,255,255,.2);border: none;padding: 10px 15px;border-radius: 10px;width: 100%;margin-top: 10px;" />
+                <br/><br/><br/>
+            </div>
+        </div>
+        <div class="tac" style="padding-top:10px;background-color:white;">
+            <img src="images/Promociones.png" style="width:100%;" />
+        </div>
+    </div>
 </div>
