@@ -2,7 +2,11 @@
 
 app.contactoView = kendo.observable({
     onShow: function() {},
-    afterShow: function() {}
+    afterShow: function() {
+        var selectedPlazaCookie = getCookie("initial");
+        changeColor(selectedPlazaCookie);
+        mapIframe(selectedPlazaCookie,"contactoIframe");
+    }
 });
 app.localization.registerView('contactoView');
 

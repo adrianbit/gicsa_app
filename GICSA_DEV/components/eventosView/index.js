@@ -2,7 +2,12 @@
 
 app.eventosView = kendo.observable({
     onShow: function() {},
-    afterShow: function() {}
+    afterShow: function() {
+        var selectedPlazaCookie = getCookie("initial");
+        changeColor(selectedPlazaCookie);
+        $("#selectedPlazaEventos").val(selectedPlazaCookie);
+        $("#selectedPlazaEventos").change(function() { changeColor($("#selectedPlazaEventos").val()); });
+    }
 });
 app.localization.registerView('eventosView');
 

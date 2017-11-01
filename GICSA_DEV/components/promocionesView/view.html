@@ -1,24 +1,26 @@
 <div data-role="view" data-title="View" data-layout="main" data-model="app.promocionesView" data-show="app.promocionesView.onShow" 
     data-after-show="app.promocionesView.afterShow" id="promocionesViewScreen" class="screen" style="">
     <header data-role="header">
-        
-        <div data-role="navbar" class="header-text" style="background-image:linear-gradient(to right, #80bd01 0%, #6b9a08 100%);">
-            <span style="display:grid;">MIS PROMOCIONES</span>
+        <div data-role="navbar" id="" class="header-text insideHeader" style="">
+            <span style="display:grid;">PROMOCIONES</span>
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
         </div>
     </header>
     <div class="grid" >
-        <div class="tac" style="text-align:center;padding-top:10px;width:100%;background-image:linear-gradient(to right, #80bd01 0%, #6b9a08 100%);">
-            <select style="color: #afafaf;padding: 10px 15px;border-radius: 3px;">
-                <option>SELECCIONAR PLAZA</option>
-                <option selected>FORUM CUERNAVACA</option>
-                <option>LA ISLA PUERTO VALLARTA</option>
-                <option>PASEO ARCOS BOSQUES</option>
-                <option>EXPLANADA CANCUN</option>
-                <option>LAS PLAZAS OUTLET GUADALAJARA</option>
-            </select>
+        <div id="" class="tac insideGrid" style="text-align:center;padding-top:10px;width:100%;">
+            <div class="col-xs-2 tac"><a href="javascript:app.mobileApp.navigate('#:back');"><span style="font-weight:bold;color:white;line-height:40px;font-size:x-large;">&lt;</span></a></div>
+            <div class="col-xs-10 tac">
+                <select id="selectedPlazaPromociones" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:90%;">
+                    <option value="">SELECCIONAR PLAZA</option>
+                    <option value="forumCuernavaca">FORUM CUERNAVACA</option>
+                    <option value="islaPuerto">LA ISLA PUERTO VALLARTA</option>
+                    <option value="paseoArcos">PASEO ARCOS BOSQUES</option>
+                    <option value="explanadaCancun">EXPLANADA CANCUN</option>
+                    <option value="plazasOutlet">LAS PLAZAS OUTLET GUADALAJARA</option>
+                </select>
+            </div>
             </br></br></br>
-            <div class="cols-10" style="text-align:left;padding:0px 20px;">
+            <div class="cols-10" style="text-align:left;padding:0px 20px;padding-top:10px;">
                 <span style="font-weight: bold;color: white;font-size: medium;">Ordenar por :</span>
                 <br/>
                 <select style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:100%;">

@@ -2,7 +2,12 @@
 
 app.tiendasView = kendo.observable({
     onShow: function() {},
-    afterShow: function() {}
+    afterShow: function() {
+        var selectedPlazaCookie = getCookie("initial");
+        changeColor(selectedPlazaCookie);
+        $("#selectedPlazaTiendas").val(selectedPlazaCookie);
+        $("#selectedPlazaTiendas").change(function() { changeColor($("#selectedPlazaTiendas").val()); });
+    }
 });
 app.localization.registerView('tiendasView');
 

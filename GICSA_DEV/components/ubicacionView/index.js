@@ -2,7 +2,16 @@
 
 app.ubicacionView = kendo.observable({
     onShow: function() {},
-    afterShow: function() {}
+    afterShow: function() {
+        var selectedPlazaCookie = getCookie("initial");
+        changeColor(selectedPlazaCookie);
+        $("#selectedPlazaUbicacion").val(selectedPlazaCookie);
+        $("#selectedPlazaUbicacion").change(function() { 
+            changeColor($("#selectedPlazaUbicacion").val());
+            mapIframe($("#selectedPlazaUbicacion").val(),"ubicacionIframe"); 
+        });
+        mapIframe(selectedPlazaCookie,"ubicacionIframe");
+    }
 });
 app.localization.registerView('ubicacionView');
 

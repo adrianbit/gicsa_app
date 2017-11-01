@@ -5,8 +5,8 @@ app.forumView = kendo.observable({
     afterShow: function() {
         $("#selectedPlazaForum").change(function() { goToView($("#selectedPlazaForum").val()); });
 
-        var urlService = "http://167.114.156.36/CustomServices/CentrosComerciales/CentrosService/GetPromocionesDestacadasByCentros/";
-        var data = { "centros": "39137cf6-8270-400c-9099-16a4caf4ee81"};
+        var urlService = "http://167.114.156.36/CustomServices/CentrosComerciales/CentrosService/GetPromocionesByCentrosAndFilter/";
+        var data = { "centroId": "39137cf6-8270-400c-9099-16a4caf4ee81", "categId":"","tiendaName":"" };
  
         $.ajax({
             url: urlService,
