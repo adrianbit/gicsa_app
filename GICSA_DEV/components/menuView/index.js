@@ -28,8 +28,15 @@ function popUp1(){
 function popUp2(){
     emailNewsletter = $("#emailNewsletter").val();
     if (true || emailNewsletter!=""){
-        goToView(selectedPlaza);
-        setCookie("initial",selectedPlaza,30)
+
+        var urlService = "http://167.114.156.36/CustomServices/Subscribers/SubscribersService/SubscribeUserEmail/email="+emailNewsletter;
+        $.ajax({
+            url: urlService
+        }).done(function(xhr) {
+            //alert(xhr.SubscribeUserEmailResult);
+            goToView(selectedPlaza);
+            setCookie("initial",selectedPlaza,30)
+        });
     }
 }
 

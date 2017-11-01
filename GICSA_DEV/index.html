@@ -52,30 +52,35 @@
         </header>
     </div>
 
-    <div id="appDrawer" data-role="drawer" data-title="Navigation">
+    <div id="appDrawer" data-role="drawer" data-title="">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
             </div>
         </header>
-        <ul id="navigation-container" data-role="listview">
-            <li><a href="components/home/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a></li>
-            <li><a href="components/popupView/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.popupView.title"></span></a></li>
-            <li><a href="components/menuView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.menuView.title"></span></a></li>
-            <li><a href="components/forumView/view.html" data-icon="details" id="forumViewLink"><span class="navigation-link-text" data-bind="text: strings.forumView.title"></span></a></li>
-            <li><a href="components/laIslaView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.laIslaView.title"></span></a></li>
-            <li><a href="components/paseoView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.paseoView.title"></span></a></li>
-            <li><a href="components/explanadaView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.explanadaView.title"></span></a></li>
-            <li><a href="components/plazasView/view.html" data-icon="details"><span class="navigation-link-text" data-bind="text: strings.plazasView.title"></span></a></li>
-            <li><a href="components/newsView/view.html" data-icon="bookmarks"><span class="navigation-link-text" data-bind="text: strings.newsView.title"></span></a></li>
-            <li><a href="components/promocionesView/view.html" data-icon="play"><span class="navigation-link-text" data-bind="text: strings.promocionesView.title"></span></a></li>
-            <li><a href="components/contactoView/view.html" data-icon="play"><span class="navigation-link-text" data-bind="text: strings.contactoView.title"></span></a></li>
-            <li><a href="components/privacidadView/view.html" data-icon="play"><span class="navigation-link-text" data-bind="text: strings.privacidadView.title"></span></a></li>
-            <li><a href="components/tiendasView/view.html" data-icon="play"><span class="navigation-link-text" data-bind="text: strings.tiendasView.title"></span></a></li>
-            <li><a href="components/novedadesView/view.html" data-icon="play"><span class="navigation-link-text" data-bind="text: strings.novedadesView.title"></span></a></li>
-            <li><a href="components/eventosView/view.html" data-icon="play"><span class="navigation-link-text" data-bind="text: strings.eventosView.title"></span></a></li>
-            <li><a href="components/ubicacionView/view.html" data-icon="globe"><span class="navigation-link-text" data-bind="text: strings.ubicacionView.title"></span></a></li>
-        </ul>
+        <div style="padding:10px;">
+            <div class="col-xs-12" style="text-align:center;"><img src="images/gicsalogo1.png" style="width:100%;"/><hr/></div>
+            <div class="col-xs-3" style="text-align:center;"><img src="images/promociones-icon.png" style="width:95%;" /></div>
+            <div class="col-xs-9"><a href="javascript:app.mobileApp.navigate('components/promocionesView/view.html');" style="color:white;">Mis promociones</a></div>
+            <div class="col-xs-12" style="text-align:center;">
+                <hr/>
+                <img src="images/magSlider.png" style="width:100%;cursor:pointer;" />
+            </div>
+            <div class="col-xs-12" style="text-align:center;color:white;margin-top: 20px;">
+                <span>Contáctanos</span>
+                <hr/>
+            </div>
+            <div class="col-xs-2" style="text-align:center;"><img src="images/mail-icon.png" style="width:350%;cursor:pointer;" /></div>
+            <div class="col-xs-2" style="text-align:center;"><img src="images/contacto-icon.png" style="width:350%;cursor:pointer;" /></div>
+            <div class="col-xs-2" style="text-align:center;"><img src="images/instagram-icon.png" style="width:350%;cursor:pointer;" /></div>
+            <div class="col-xs-2" style="text-align:center;"><img src="images/twitter-icon.png" style="width:350%;cursor:pointer;" /></div>
+            <div class="col-xs-2" style="text-align:center;"><img src="images/facebook-icon.png" style="width:350%;cursor:pointer;" /></div>
+            <div class="col-xs-2" style="text-align:center;"><img src="images/youtube-icon.png" style="width:350%;cursor:pointer;" /></div>
+            <div class="col-xs-12" style="text-align:center;font-size:10px;margin-top:20px;">
+                <span style="color:white;">2017 Copyright. 
+                <a href="javascript:app.mobileApp.navigate('components/privacidadView/view.html');" style="color:white;">Politica de Privacidad</a></span>
+            </div>
+        </div>
     </div>
     <div id="appDrawer1" data-role="drawer" data-title="Navigation">
         ADRIAN AYALA TORRES
