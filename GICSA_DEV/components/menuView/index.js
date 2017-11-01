@@ -64,6 +64,7 @@ function setCookie(cname, cvalue, exdays) {
 }
 
 function goToView(selectedPlaza){
+    setCookie("initial",selectedPlaza,30)
     if (selectedPlaza=="forumCuernavaca"){
         app.mobileApp.navigate("components/forumView/view.html");
     } else if (selectedPlaza=="islaPuerto"){

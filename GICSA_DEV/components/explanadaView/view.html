@@ -4,12 +4,10 @@
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
         </div>
     </header>
-    <div class="grid">
-        <div class="cols-10" style="position:absolute;top:0px;width:100%;">
-            <img src="images/Explanada.png" style="width:100%;"/>
-        </div>
-        <div class="cols-10 tac" style="text-align:center;padding-top:75px;position:absolute;width:100%;">
-            <select id="selectedPlazaExplanada" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;">
+    <div class="grid" style="background-image:linear-gradient(to right, #e4489c 0%, #e11282 100%);height:-webkit-fill-available;min-height:680px;">
+        <div class="col-xs-12 tac"><img src="images/logo-explanada.png" style="width:70%;"/></div>
+        <div class="col-xs-12 tac" style="padding-top:25px;width:100%;">
+            <select id="selectedPlazaForum" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:100%;">
                 <option value="">SELECCIONAR PLAZA</option>
                 <option value="forumCuernavaca" selected>FORUM CUERNAVACA</option>
                 <option value="islaPuerto">LA ISLA PUERTO VALLARTA</option>
@@ -17,6 +15,44 @@
                 <option value="explanadaCancun" selected>EXPLANADA CANCUN</option>
                 <option value="plazasOutlet">LAS PLAZAS OUTLET GUADALAJARA</option>
             </select>
+            <hr/>
+        </div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/promocionesView/view.html');">
+            <img src="images/promociones-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Promociones</span>
+        </div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/novedadesView/view.html');">
+            <img src="images/novedades-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Novedades</span>
+        </div>
+        <div class="col-xs-12"><hr/></div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/eventosView/view.html');">
+            <img src="images/eventos-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Eventos</span>
+        </div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/tiendasView/view.html');">
+            <img src="images/tiendas-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Tiendas</span>
+        </div>
+        <div class="col-xs-12"><hr/></div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/contactoView/view.html');">
+            <img src="images/contacto-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Contacto</span>
+        </div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/ubicacionView/view.html');">
+            <img src="images/ubication-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Ubicación</span>
+        </div>
+        <div class="col-xs-12"><hr/></div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2 tac"><img src="images/mail-icon.png" style="width:100%;cursor:pointer;" /></div>
+        <div class="col-xs-2 tac"><img src="images/instagram-icon.png" style="width:100%;cursor:pointer;" /></div>
+        <div class="col-xs-2 tac"><img src="images/twitter-icon.png" style="width:100%;cursor:pointer;" /></div>
+        <div class="col-xs-2 tac"><img src="images/facebook-icon.png" style="width:100%;cursor:pointer;" /></div>
+        <div class="col-xs-2 tac"><img src="images/youtube-icon.png" style="width:100%;cursor:pointer;" /></div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-12 tac" style="padding:20px 0px;color:white;">
+            <span>Gracias por suscribirte</span>
         </div>
     </div>
 </div>

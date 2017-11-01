@@ -6,17 +6,17 @@ app.forumView = kendo.observable({
         $("#selectedPlazaForum").change(function() { goToView($("#selectedPlazaForum").val()); });
 
         var urlService = "http://167.114.156.36/CustomServices/CentrosComerciales/CentrosService/GetPromocionesDestacadasByCentros/";
-        var data = { "centros":"39137cf6-8270-400c-9099-16a4caf4ee81" };
+        var data = { "centros": "39137cf6-8270-400c-9099-16a4caf4ee81"};
  
-        /**$.ajax({
+        $.ajax({
             url: urlService,
             type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",  
             data: data
         }).done(function(xhr) {
             alert(xhr);
-        });*/
-
-        $.post( urlService, data );
+        });
         
     }
 });

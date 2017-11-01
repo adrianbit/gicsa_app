@@ -1,3 +1,14 @@
+.tac{
+    text-align:center;
+}
+
+.tar{
+    text-align:right;
+}
+
+.tal{
+    text-align:left;
+}
 #kendoUiMobileApp .block {
     display: block;
     margin: 1em;
