@@ -23,13 +23,14 @@ function loadTiendas(selectedPlazaCookie){
     var centroId = getIdCentro(selectedPlazaCookie);
     var urlService = "http://167.114.156.36/CustomServices/CentrosComerciales/CentrosService/GetTiendaByFilters?centroId="+centroId;
 
+    $("#tiendasResponse").html(loadingHtml);
+    $(".loadingData").show();
+
     $.ajax({
         url: urlService,
         contentType: "application/json; charset=utf-8",
         dataType: "json", 
     }).done(function(xhr) {
-
-        $("#tiendasResponse").html("");
 
         var tiendas = xhr.GetTiendaByFiltersResult;
 
@@ -58,11 +59,12 @@ function loadTiendas(selectedPlazaCookie){
                         '<a href="'+detalleTienda+'" target="_blank">Leer más</a>'+
                         '<hr/>'+
                     '</div>'+
-                    '<div class="col-xs-6 tal" style="padding-left:30px;"><img src="images/dummy-icon.png" style="width:30px;"/></div>'+
-                    '<div class="col-xs-6 tar" style="padding-right:30px;"><img src="images/dummy-icon.png" style="width:30px;"/></div>'+
-                    '<div class="col-xs-12"><hr style="border:5px solid #dcdcdc;"/></div>'+
+                    '<div class="col-xs-6 tal" style="padding-left:30px;"><img src="images/viber-icon.png" style="width:30px;cursor:pointer;"/></div>'+
+                    '<div class="col-xs-6 tar" style="padding-right:30px;"><img src="images/share-icon.png" style="width:30px;cursor:pointer;"/></div>'+
+                    '<div class="col-xs-12"><hr style="border:2px solid #dcdcdc;"/></div>'+
                 '</div>';
 
+            $(".loadingData").hide();
             $("#tiendasResponse").append(htmlTienda);
         }
     });

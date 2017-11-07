@@ -4,8 +4,11 @@ app.contactoView = kendo.observable({
     onShow: function() {},
     afterShow: function() {
         var selectedPlazaCookie = getCookie("initial");
-        changeColor(selectedPlazaCookie);
+        //changeColor(selectedPlazaCookie);
         mapIframe(selectedPlazaCookie,"contactoIframe");
+        $(".insideHeader").css("background-image","linear-gradient(to right, #f6a426 0%, #ff8a00 100%)");
+        $(".insideGrid").css("background-image","linear-gradient(to right, #f6a426 0%, #ff8a00 100%)");
+        $(".km-content").css("background-color","#fb9611");
     }
 });
 app.localization.registerView('contactoView');

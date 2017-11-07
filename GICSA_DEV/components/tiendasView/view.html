@@ -1,23 +1,27 @@
-<div data-role="view" data-title="View" data-layout="main" data-model="app.tiendasView" data-show="app.tiendasView.onShow" data-after-show="app.tiendasView.afterShow" id="tiendasViewScreen" class="screen">
+<div style="position:fixed;" data-role="view" data-title="View" data-layout="main" data-model="app.tiendasView" data-show="app.tiendasView.onShow" data-after-show="app.tiendasView.afterShow" id="tiendasViewScreen" class="screen">
     <header data-role="header">
         <div data-role="navbar" id="" class="header-text insideHeader" style="">
             <span style="display:grid;">TIENDAS</span>
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            <div style="margin-left:-58px;padding:20px 0px;position:fixed;" class="insideHeader">
+                <div class="col-xs-2 tac">
+                    <a href="javascript:app.mobileApp.navigate('#:back');"><img src="images/back-icon.png" style="margin-top:4px;"></a>
+                </div>
+                <div class="col-xs-10 tac">
+                    <select id="selectedPlazaTiendas" style="font-size:smaller;color:#8a8a8a;padding:10px 15px;border-radius:3px;width:90%;">
+                        <option style="color:#8a8a8a;" value="">SELECCIONAR PLAZA</option>
+                        <option style="color:#8a8a8a;" value="forumCuernavaca">FORUM CUERNAVACA</option>
+                        <option style="color:#8a8a8a;" value="islaPuerto">LA ISLA PUERTO VALLARTA</option>
+                        <option style="color:#8a8a8a;" value="paseoArcos">PASEO ARCOS BOSQUES</option>
+                        <option style="color:#8a8a8a;" value="explanadaCancun">EXPLANADA CANCUN</option>
+                        <option style="color:#8a8a8a;" value="plazasOutlet">LAS PLAZAS OUTLET GUADALAJARA</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </header>
     <div class="grid" >
-        <div class="tac insideGrid" id="" style="text-align:center;padding-top:10px;width:100%;">
-            <div class="col-xs-2 tac"><a href="javascript:app.mobileApp.navigate('#:back');"><span style="font-weight:bold;color:white;line-height:40px;font-size:x-large;">&lt;</span></a></div>
-            <div class="col-xs-10 tac">
-                <select id="selectedPlazaTiendas" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:90%;">
-                    <option value="">SELECCIONAR PLAZA</option>
-                    <option value="forumCuernavaca">FORUM CUERNAVACA</option>
-                    <option value="islaPuerto">LA ISLA PUERTO VALLARTA</option>
-                    <option value="paseoArcos">PASEO ARCOS BOSQUES</option>
-                    <option value="explanadaCancun">EXPLANADA CANCUN</option>
-                    <option value="plazasOutlet">LAS PLAZAS OUTLET GUADALAJARA</option>
-                </select>
-            </div>
+        <div class="tac insideGrid" id="" style="text-align:center;padding-top:20px;width:100%;">
             </br></br></br>
             <div class="cols-10" style="text-align:left;padding:0px 20px;">
                 <span style="font-weight: bold;color: white;font-size: medium;">Ordenar por :</span>
@@ -26,11 +30,16 @@
                     <option>Categoria</option>
                 </select>
                 <br/>
-                <input type="text" placeholder="Buscar" style="color:white;background-color: rgba(255,255,255,.2);border: none;padding: 10px 15px;border-radius: 10px;width: 100%;margin-top: 10px;" />
+                <input type="text" placeholder="&#xF002;" style="font-family:Arial, FontAwesome;color:white;background-color: rgba(255,255,255,.2);border: none;padding: 10px 15px;border-radius: 10px;width: 100%;margin-top: 10px;" />
                 <br/><br/><br/>
             </div>
         </div>
         <div id="tiendasResponse" class="tac" style="padding-top:10px;background-color:white;">
+            <div class="row loadingData" style="padding:20px 10px 0px;" id="loadingData">
+                <div class="col-xs-12 tac">
+                    <img src="images/loading.gif" style="width:50%;margin-top:30px;"/>
+                </div>
+            </div>
             <!--<div class="row" style="padding:20px 10px 0px;">
                 <div class="col-xs-12">
                     <img src="http://167.114.156.36/images/default-source/default-album/hugoboss.png" style="width:100%;"/>

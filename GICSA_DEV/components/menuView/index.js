@@ -40,6 +40,11 @@ function popUp2(){
     }
 }
 
+function popup3(){
+    goToView(selectedPlaza);
+    setCookie("initial",selectedPlaza,30)
+}
+
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);

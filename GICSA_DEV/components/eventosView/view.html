@@ -1,26 +1,35 @@
-<div data-role="view" data-title="View" data-layout="main" data-model="app.eventosView" data-show="app.eventosView.onShow" data-after-show="app.eventosView.afterShow" id="eventosViewScreen" class="screen">
+<div style="position:fixed;" data-role="view" data-title="View" data-layout="main" data-model="app.eventosView" data-show="app.eventosView.onShow" data-after-show="app.eventosView.afterShow" id="eventosViewScreen" class="screen">
     <header data-role="header">
         <div data-role="navbar" class="header-text insideHeader" style="">
             <span style="display:grid;">EVENTOS</span>
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            <div style="margin-left:-58px;padding:20px 0px;position:fixed;" class="insideHeader">
+                <div class="col-xs-2 tac">
+                    <a href="javascript:app.mobileApp.navigate('#:back');"><img src="images/back-icon.png" style="margin-top:4px;"></a>
+                </div>
+                <div class="col-xs-10 tac">
+                    <select id="selectedPlazaEventos" style="font-size:smaller;color:#8a8a8a;padding:10px 15px;border-radius:3px;width:90%;">
+                        <option style="color:#8a8a8a;" value="">SELECCIONAR PLAZA</option>
+                        <option style="color:#8a8a8a;" value="forumCuernavaca">FORUM CUERNAVACA</option>
+                        <option style="color:#8a8a8a;" value="islaPuerto">LA ISLA PUERTO VALLARTA</option>
+                        <option style="color:#8a8a8a;" value="paseoArcos">PASEO ARCOS BOSQUES</option>
+                        <option style="color:#8a8a8a;" value="explanadaCancun">EXPLANADA CANCUN</option>
+                        <option style="color:#8a8a8a;" value="plazasOutlet">LAS PLAZAS OUTLET GUADALAJARA</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </header>
     <div class="grid" >
         <div class="tac insideGrid" style="text-align:center;padding-top:10px;width:100%;">
-            <div class="col-xs-2 tac"><a href="javascript:app.mobileApp.navigate('#:back');"><span style="font-weight:bold;color:white;line-height:40px;font-size:x-large;">&lt;</span></a></div>
-            <div class="col-xs-10 tac">
-                <select id="selectedPlazaEventos" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:90%;">
-                    <option value="">SELECCIONAR PLAZA</option>
-                    <option value="forumCuernavaca">FORUM CUERNAVACA</option>
-                    <option value="islaPuerto">LA ISLA PUERTO VALLARTA</option>
-                    <option value="paseoArcos">PASEO ARCOS BOSQUES</option>
-                    <option value="explanadaCancun">EXPLANADA CANCUN</option>
-                    <option value="plazasOutlet">LAS PLAZAS OUTLET GUADALAJARA</option>
-                </select>
-            </div>
             </br></br></br>
         </div>
-        <div id="eventosResponse" class="tac" style="padding-top:10px;background-color:white;">
+        <div id="eventosResponse" class="tac" style="padding-top:20px;background-color:white;">
+            <div class="row loadingData" style="padding:20px 10px 0px;" id="loadingData">
+                <div class="col-xs-12 tac">
+                    <img src="images/loading.gif" style="width:50%;margin-top:30px;"/>
+                </div>
+            </div>
             <!--<div class="row" style="padding:20px 10px 0px;">
                 <div class="col-xs-12">
                     <img src="http://167.114.156.36:8042/images/librariesprovider14/promociones-la-isla-cancun/30-10-2017-juliobuenfin.jpg" style="width:100%;"/>

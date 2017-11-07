@@ -1,35 +1,93 @@
-<div data-role="view" data-title="View" data-layout="main" data-model="app.contactoView" data-show="app.contactoView.onShow" data-after-show="app.contactoView.afterShow" id="contactoViewScreen" class="screen">
+<div style="position:fixed;" data-role="view" data-title="View" data-layout="main" data-model="app.contactoView" data-show="app.contactoView.onShow" data-after-show="app.contactoView.afterShow" id="contactoViewScreen" class="screen">
     <header data-role="header">
         <div data-role="navbar" class="header-text insideHeader" style="">
             <span style="display:grid;" class="titleHeader"></span>
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            <div style="margin-left:-58px;padding:20px 0px 0px;position:fixed;" class="insideHeader">
+                <div class="col-xs-12" style="text-align:center;">
+                    <a href="javascript:goToView(getCookie('initial'));"><img src="images/gicsalogo1.png" style="width:90%;cursor:pointer;"/><hr/></a>
+                </div>
+            </div>
         </div>
     </header>
 
 
     <!-- START_CUSTOM_CODE_contactoView -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <style>
+        ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+            color: #afafaf;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: #afafaf;
+            opacity:  1;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:  #afafaf;
+            opacity:  1;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #afafaf;
+        }
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: #afafaf;
+        }
+    </style>
+
     <div class="grid insideGrid" style="padding:10px 20px;">
-        <div class="col-xs-12" style="text-align:center;">
-            <a href="javascript:goToView(getCookie('initial'));"><img src="images/gicsalogo1.png" style="width:100%;cursor:pointer;"/><hr/></a>
-        </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
         <div class="tac" style="width:100%;">
             <span style="font-weight: bold;color: white;font-size: medium;">PONTE EN CONTACTO CON NOSOTROS</span>
             <br/><br/>
         </div>
-        <div style="width:50%;overflow: auto;padding:3px 5px;">
+        <div style="width:70%;overflow: auto;padding:3px 5px;">
             <input type="text" placeholder="NOMBRE" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:100%;"/>
         </div>
-        <div style="width:50%;overflow: auto;padding:3px 5px;">
+        <div style="width:70%;overflow: auto;padding:3px 5px;">
             <input type="text" placeholder="TIPO DE CONSULTA" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:100%;"/>
         </div>
         <div style="width:100%;overflow: auto;padding:3px 5px;">
             <input type="text" placeholder="CORREO ELECTRÓNICO" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:100%;"/>
         </div>
-        <div style="width:50%;overflow: auto;padding:3px 5px;">
-            <input type="text" placeholder="PAÍS" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:100%;"/>
+        <div style="width:70%;overflow: auto;padding:3px 5px;">
+            <select placeholder="PAIS" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:100%;">
+                <option value="">PAIS</option>
+                <option value="DIF">Distrito Federal</option>
+                <option value="AGS">Aguascalientes</option>
+                <option value="BCN">Baja California</option>
+                <option value="BCS">Baja California Sur</option>
+                <option value="CAM">Campeche</option>
+                <option value="CHP">Chiapas</option>
+                <option value="CHI">Chihuahua</option>
+                <option value="COA">Coahuila</option>
+                <option value="COL">Colima</option>
+                <option value="DUR">Durango</option>
+                <option value="GTO">Guanajuato</option>
+                <option value="GRO">Guerrero</option>
+                <option value="HGO">Hidalgo</option>
+                <option value="JAL">Jalisco</option>
+                <option value="MEX">M&eacute;xico</option>
+                <option value="MIC">Michoac&aacute;n</option>
+                <option value="MOR">Morelos</option>
+                <option value="NAY">Nayarit</option>
+                <option value="NLE">Nuevo Le&oacute;n</option>
+                <option value="OAX">Oaxaca</option>
+                <option value="PUE">Puebla</option>
+                <option value="QRO">Quer&eacute;taro</option>
+                <option value="ROO">Quintana Roo</option>
+                <option value="SLP">San Luis Potos&iacute;</option>
+                <option value="SIN">Sinaloa</option>
+                <option value="SON">Sonora</option>
+                <option value="TAB">Tabasco</option>
+                <option value="TAM">Tamaulipas</option>
+                <option value="TLX">Tlaxcala</option>
+                <option value="VER">Veracruz</option>
+                <option value="YUC">Yucat&aacute;n</option>
+                <option value="ZAC">Zacatecas</option>
+            </select>
         </div>
-        <div style="width:50%;overflow: auto;padding:3px 5px;">
+        <div style="width:70%;overflow: auto;padding:3px 5px;">
             <input type="text" placeholder="TELÉFONO" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:100%;"/>
         </div>
         <div style="width:100%;overflow: auto;padding:3px 5px;">

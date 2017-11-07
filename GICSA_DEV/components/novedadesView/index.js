@@ -23,13 +23,14 @@ function loadNovedades(selectedPlazaCookie){
     var centroId = getIdCentro(selectedPlazaCookie);
     var urlService = "http://167.114.156.36/CustomServices/CentrosComerciales/CentrosService/GetNoticiasDestacadosByCentro?centroId="+centroId;
 
+    $("#novedadesResponse").html(loadingHtml);
+    $(".loadingData").show();
+
     $.ajax({
         url: urlService,
         contentType: "application/json; charset=utf-8",
         dataType: "json", 
     }).done(function(xhr) {
-
-        $("#novedadesResponse").html("");
 
         var novedades = xhr.GetNoticiasDestacadosByCentroResult;
 
@@ -55,10 +56,11 @@ function loadNovedades(selectedPlazaCookie){
                         '<br/>'+
                         '<hr/>'+
                     '</div>'+
-                    '<div class="col-xs-12 tar" style="padding-right:30px;"><img src="images/dummy-icon.png" style="width:30px;"/></div>'+
-                    '<div class="col-xs-12"><hr style="border:5px solid #dcdcdc;"/></div>'+
+                    '<div class="col-xs-12 tar" style="padding-right:30px;"><img src="images/share-icon.png" style="width:30px;"/></div>'+
+                    '<div class="col-xs-12"><hr style="border:2px solid #dcdcdc;"/></div>'+
                 '</div>';
 
+            $(".loadingData").hide();
             $("#novedadesResponse").append(htmlNovedad);
         }
     });

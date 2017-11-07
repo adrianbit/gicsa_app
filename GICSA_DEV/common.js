@@ -1,3 +1,10 @@
+var loadingHtml = ''+
+    '<div class="row loadingData" style="padding:20px 10px 0px;" id="loadingData">'+
+        '<div class="col-xs-12 tac">'+
+            '<img src="images/loading.gif" style="width:50%;margin-top:30px;"/>'+
+        '</div>'+
+    '</div>';
+
 function getIdCentro(selectedPlaza){
     var id = "";
     if (selectedPlaza=="forumCuernavaca"){
@@ -14,7 +21,23 @@ function getIdCentro(selectedPlaza){
     return id;
 }
 
-function changeColor(selectedPlaza){
+function getColor(selectedPlaza){
+    var color = "";
+    if (selectedPlaza=="forumCuernavaca"){
+        color = "#6b9a08";
+    } else if (selectedPlaza=="islaPuerto"){
+        color = "#28d0c9)";
+    } else if (selectedPlaza=="paseoArcos"){
+        color = "#282828";
+    } else if (selectedPlaza=="explanadaCancun"){
+        color = "#e11282";
+    } else if (selectedPlaza=="plazasOutlet"){
+        color = "#eb0028";
+    }
+    return color;
+}
+
+function getGradientColor(selectedPlaza){
     var color = "";
     if (selectedPlaza=="forumCuernavaca"){
         color = "linear-gradient(to right, #80bd01 0%, #6b9a08 100%)";
@@ -27,7 +50,11 @@ function changeColor(selectedPlaza){
     } else if (selectedPlaza=="plazasOutlet"){
         color = "linear-gradient(to right, #f44e6b 0%, #eb0028 100%)";
     }
+    return color;
+}
 
+function changeColor(selectedPlaza){
+    var color = getGradientColor(selectedPlaza);
     $(".insideHeader").css("background-image",color);
     $(".insideGrid").css("background-image",color);
 }

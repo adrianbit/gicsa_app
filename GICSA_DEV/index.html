@@ -9,6 +9,7 @@
 
     <link href="styles/overrides.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <script src="cordova.js"></script>
@@ -53,35 +54,30 @@
         </header>
     </div>
 
-    <div id="appDrawer" data-role="drawer" data-title="">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-            </div>
-        </header>
+    <div id="appDrawer" data-role="drawer" data-title="" class="appDrawer">
         <div style="padding:10px;">
             <div class="col-xs-12" style="text-align:center;">
                 <a href="javascript:goToView(getCookie('initial'));"><img src="images/gicsalogo1.png" style="width:100%;cursor:pointer;"/><hr/></a>
             </div>
-            <div class="col-xs-3" style="text-align:center;"><img src="images/promociones-icon.png" style="width:95%;" /></div>
-            <div class="col-xs-9"><a href="javascript:app.mobileApp.navigate('components/promocionesView/view.html');" style="color:white;">Mis promociones</a></div>
+            <div class="col-xs-3" style="text-align:center;"><img src="images/gift-icon.png" style="width:95%;" /></div>
+            <div class="col-xs-9" style="padding-top:6px;"><a href="javascript:app.mobileApp.navigate('components/promocionesView/view.html');" style="color:white;">Mis promociones</a></div>
             <div class="col-xs-12" style="text-align:center;">
                 <hr/>
                 <img src="images/magSlider.png" style="width:100%;cursor:pointer;" />
             </div>
-            <div class="col-xs-12" style="text-align:center;color:white;margin-top: 20px;">
+            <div class="col-xs-12" style="text-align:center;color:white;margin-top: 30px;">
                 <span>Contáctanos</span>
                 <hr/>
             </div>
             <div class="col-xs-2" style="text-align:center;"><img src="images/mail-icon.png" style="width:350%;cursor:pointer;" /></div>
             <div class="col-xs-2" style="text-align:center;"><img src="images/contacto-icon.png" style="width:350%;cursor:pointer;" /></div>
-            <div class="col-xs-2" style="text-align:center;"><img src="images/instagram-icon.png" style="width:350%;cursor:pointer;" /></div>
+            <div class="col-xs-2" style="text-align:center;"><img src="images/whats-icon.png" style="width:350%;cursor:pointer;" /></div>
             <div class="col-xs-2" style="text-align:center;"><img src="images/twitter-icon.png" style="width:350%;cursor:pointer;" /></div>
             <div class="col-xs-2" style="text-align:center;"><img src="images/facebook-icon.png" style="width:350%;cursor:pointer;" /></div>
             <div class="col-xs-2" style="text-align:center;"><img src="images/youtube-icon.png" style="width:350%;cursor:pointer;" /></div>
             <div class="col-xs-12" style="text-align:center;font-size:10px;margin-top:20px;">
                 <span style="color:white;">2017 Copyright. 
-                <a href="javascript:app.mobileApp.navigate('components/privacidadView/view.html');" style="color:white;">Politica de Privacidad</a></span>
+                <a href="javascript:app.mobileApp.navigate('components/privacidadView/view.html');" style="color:white;text-decoration:underline;">Politica de Privacidad</a></span>
             </div>
         </div>
     </div>
