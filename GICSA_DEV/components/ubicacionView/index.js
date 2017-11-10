@@ -10,7 +10,7 @@ app.ubicacionView = kendo.observable({
             changeColor($("#selectedPlazaUbicacion").val());
             mapIframe($("#selectedPlazaUbicacion").val(),"ubicacionIframe"); 
         });
-        mapIframe(selectedPlazaCookie,"ubicacionIframe");
+        //mapIframe(selectedPlazaCookie,"ubicacionIframe");
     }
 });
 app.localization.registerView('ubicacionView');

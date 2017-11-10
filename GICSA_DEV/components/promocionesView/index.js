@@ -48,7 +48,7 @@ function loadPromociones(selectedPlazaCookie){
             var htmlPromocion = '' +
                 '<div class="row" style="padding:20px 10px 0px;">'+
                     '<div class="col-xs-12">'+
-                        '<img src="'+imagePromocion+'" style="width:100%;"/>'+
+                        '<img src="'+imagePromocion+'" style="width:100%;background: url(images/placeholder.jpg) 100%;min-height:160px;min-width:100%;"/>'+
                     '</div>'+
                     '<div class="col-xs-12" style="margin-top:20px;text-align:left;padding:0px 30px;">'+
                         '<span>'+tituloPromocion+'</span>'+

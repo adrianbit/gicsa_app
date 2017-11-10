@@ -74,7 +74,8 @@ function mapIframe(selectedPlaza, id){
         key = "plazas%20outlet%20guadalajara+(GICSA)";
     }
 
-    var urlMap = "https://www.mapsdirections.info/crear-un-mapa-de-google/map.php?width=100%&height=600&hl=en&q="+key+"&ie=UTF8&t=&z=14&iwloc=A&output=embed";
+    //var urlMap = "https://www.mapsdirections.info/crear-un-mapa-de-google/map.php?width=100%&height=600&hl=en&q="+key+"&ie=UTF8&t=&z=14&iwloc=A&output=embed";
+    var urlMap = "https://www.google.com/maps/embed/v1/directions?origin=mi+ubicacion&destination="+key+"&key=AIzaSyC0LIfIwD5-WT2s6MshjpFiP5tZXULw7LU";
 
     $('#'+id).attr('src', (urlMap));
 }
