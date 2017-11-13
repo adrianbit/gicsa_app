@@ -45,6 +45,8 @@ function loadPromociones(selectedPlazaCookie){
             var inicioPromocion = promociones[x].VigenciaInicio;
             var finPromocion = promociones[x].VigenciaFin;
 
+            var share = "share('Promoción : "+tituloPromocion+"', '', '"+imagePromocion+"', '"+detallePromocion+"');";
+
             var htmlPromocion = '' +
                 '<div class="row" style="padding:20px 10px 0px;">'+
                     '<div class="col-xs-12">'+
@@ -62,7 +64,7 @@ function loadPromociones(selectedPlazaCookie){
                         '<hr/>'+
                     '</div>'+
                     '<div class="col-xs-6 tal" style="padding-left:30px;"><img src="images/download-icon.png" style="width:30px;cursor:pointer;"/></div>'+
-                    '<div class="col-xs-6 tar" style="padding-right:30px;"><img src="images/share-icon.png" style="width:30px;cursor:pointer;"/></div>'+
+                    '<div class="col-xs-6 tar" style="padding-right:30px;"><img src="images/share-icon.png" onclick="'+share+'" style="width:30px;cursor:pointer;"/></div>'+
                     '<div class="col-xs-12"><hr style="border:2px solid #dcdcdc;"/></div>'+
                 '</div>';
 

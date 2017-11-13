@@ -41,6 +41,8 @@ function loadTiendas(selectedPlazaCookie){
             var detalleTienda = tiendas[x].DetalleURL;
             var horarioTienda = tiendas[x].Horario;
 
+            var share = "share('Tienda : "+tituloTienda+"', '', '"+imageTienda+"', '"+detalleTienda+"');";
+
             var htmlTienda = '' +
                 '<div class="row" style="padding:20px 10px 0px;">'+
                     '<div class="col-xs-12">'+
@@ -60,7 +62,7 @@ function loadTiendas(selectedPlazaCookie){
                         '<hr/>'+
                     '</div>'+
                     '<div class="col-xs-6 tal" style="padding-left:30px;"><img src="images/viber-icon.png" style="width:30px;cursor:pointer;"/></div>'+
-                    '<div class="col-xs-6 tar" style="padding-right:30px;"><img src="images/share-icon.png" style="width:30px;cursor:pointer;"/></div>'+
+                    '<div class="col-xs-6 tar" style="padding-right:30px;"><img src="images/share-icon.png" onclick="'+share+'" style="width:30px;cursor:pointer;"/></div>'+
                     '<div class="col-xs-12"><hr style="border:2px solid #dcdcdc;"/></div>'+
                 '</div>';
 

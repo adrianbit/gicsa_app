@@ -41,6 +41,8 @@ function loadNovedades(selectedPlazaCookie){
             var detalleNovedad = novedades[x].DetalleUrl;
             var inicioNovedad = novedades[x].Subtitulo;
 
+            var share = "share('Noticia : "+tituloNovedad+"', '', '"+imageNovedad+"', '"+detalleNovedad+"');";
+
             var htmlNovedad = '' +
                 '<div class="row" style="padding:20px 10px 0px;">'+
                     '<div class="col-xs-12">'+
@@ -56,7 +58,7 @@ function loadNovedades(selectedPlazaCookie){
                         '<br/>'+
                         '<hr/>'+
                     '</div>'+
-                    '<div class="col-xs-12 tar" style="padding-right:30px;"><img src="images/share-icon.png" style="width:30px;"/></div>'+
+                    '<div class="col-xs-12 tar" style="padding-right:30px;"><img src="images/share-icon.png" onclick="'+share+'" style="width:30px;"/></div>'+
                     '<div class="col-xs-12"><hr style="border:2px solid #dcdcdc;"/></div>'+
                 '</div>';
 
