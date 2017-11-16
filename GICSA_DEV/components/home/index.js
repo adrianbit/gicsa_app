@@ -11,11 +11,13 @@ app.home = kendo.observable({
 
         changeColor(selectedPlazaCookie);
         logoPlaza(selectedPlazaCookie, "logoCentroComercial");
+        initSocialIcons(selectedPlazaCookie);
         $("#selectedPlazaHome").val(selectedPlazaCookie);
 
         $("#selectedPlazaHome").change(function() { 
             changeColor($("#selectedPlazaHome").val());
             logoPlaza($("#selectedPlazaHome").val(), "logoCentroComercial");
+            initSocialIcons($("#selectedPlazaHome").val());
             setCookie("initial",$("#selectedPlazaHome").val(),30);
         });
     }

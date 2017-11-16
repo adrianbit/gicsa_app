@@ -61,7 +61,7 @@ function loadTiendas(selectedPlazaCookie){
                         '<a href="'+detalleTienda+'" target="_blank">Leer más</a>'+
                         '<hr/>'+
                     '</div>'+
-                    '<div class="col-xs-6 tal" style="padding-left:30px;"><img src="images/viber-icon.png" style="width:30px;cursor:pointer;"/></div>'+
+                    '<div class="col-xs-6 tal" style="padding-left:30px;"><img src="images/call-icon.svg" style="width:40px;cursor:pointer;"/></div>'+
                     '<div class="col-xs-6 tar" style="padding-right:30px;"><img src="images/share-icon.png" onclick="'+share+'" style="width:30px;cursor:pointer;"/></div>'+
                     '<div class="col-xs-12"><hr style="border:2px solid #dcdcdc;"/></div>'+
                 '</div>';

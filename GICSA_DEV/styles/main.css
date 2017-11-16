@@ -95,7 +95,10 @@
 
 #kendoUiMobileApp .km-drawer-button:after,
 #kendoUiMobileApp .km-drawer-button:before {
-    content: '\e077';
+        /* content: '\e077'; */
+    background-image: url(../images/menu-icon.png);
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
 }
 
 #kendoUiMobileApp .icon-group .app-icon,
