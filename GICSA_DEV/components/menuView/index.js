@@ -6,7 +6,10 @@ var currentApp = app;
 
 app.menuView = kendo.observable({
     onShow: function() {
-        goToView(getCookie("initial"));
+        var selectedPlazaCookie = getCookie("initial");
+        if (selectedPlazaCookie!=""){
+            goToView(getCookie("initial"));
+        }
     },
     afterShow: function() {
     }
@@ -70,17 +73,7 @@ function setCookie(cname, cvalue, exdays) {
 
 function goToView(selectedPlaza){
     setCookie("initial",selectedPlaza,30)
-    if (selectedPlaza=="forumCuernavaca"){
-        app.mobileApp.navigate("components/forumView/view.html");
-    } else if (selectedPlaza=="islaPuerto"){
-        app.mobileApp.navigate("components/laIslaView/view.html");
-    } else if (selectedPlaza=="paseoArcos"){
-        app.mobileApp.navigate("components/paseoView/view.html");
-    } else if (selectedPlaza=="explanadaCancun"){
-        app.mobileApp.navigate("components/explanadaView/view.html");
-    } else if (selectedPlaza=="plazasOutlet"){
-        app.mobileApp.navigate("components/plazasView/view.html");
-    }
+    app.mobileApp.navigate("components/home/view.html");
 }
 
 // END_CUSTOM_CODE_menuView

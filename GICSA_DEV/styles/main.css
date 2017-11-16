@@ -17,7 +17,10 @@
 
 .km-nova .km-drawer .km-navbar{ background:#f6a426; }
 .km-nova .km-navbar, .km-nova .k-toolbar, .km-nova .km-tabstrip, .km-nova .km-drawer .km-content{
-    background-image:linear-gradient(to right, #f6a426 0%, #ff8a00 100%);
+}
+
+.km-nova .km-drawer .km-content{
+    background-image:linear-gradient(to right, #f6a426 0%, #ff8a00 100%) !important;
 }
 
 .km-button .km-icon, .km-detail .km-icon, .km-ios .km-button .km-icon, .km-list .km-icon{

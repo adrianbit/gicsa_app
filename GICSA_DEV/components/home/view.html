@@ -1,12 +1,75 @@
 <div style="position:fixed;" data-role="view" data-title="View" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow" id="homeScreen" class="screen">
     <header data-role="header">
-        <div data-role="navbar" class="header-text">
-
-            <span data-bind="text: strings.home.title"></span>
-
+        <div data-role="navbar" class="header-text insideHeader" style="">
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
-
         </div>
     </header>
-    
+    <div class="grid insideGrid" style="height:-webkit-fill-available;min-height:670px;">
+        <div class="col-xs-12 tac"><img id="logoCentroComercial" src="images/gicsalogo1.png" style="height:80px;"/></div>
+        <div class="col-xs-12 tac" style="padding-top:25px;width:100%;">
+            <select id="selectedPlazaHome" style="color: #afafaf;padding: 10px 15px;border-radius: 3px;width:100%;">
+                <option value="">SELECCIONAR PLAZA</option>
+                <option value="forumCuernavaca">FORUM CUERNAVACA</option>
+                <option value="islaPuertoVallarta">LA ISLA PUERTO VALLARTA</option>
+                <option value="paseoArcos">PASEO ARCOS BOSQUES</option>
+                <option value="magazine">MAGAZINE</option>
+                <option value="plazasOutletLerma">LAS PLAZAS OUTLET LERMA</option>
+                <option value="forumBuenavista">FORUM BUENAVISTA</option>
+                <option value="paseoInterlomas">PASEO INTERLOMAS</option>
+                <option value="islaAcapulco">LA ISLA ACAPULCO</option>
+                <option value="forumTlaquepaque">FORUM TLAQUEPAQUE</option>
+                <option value="forumCoatzacoalcos">FORUM COATZACOALCOS</option>
+                <option value="forumCualiacan">FORUM CULIACAN</option>
+                <option value="forumTepic">FORUM TEPIC</option>
+                <option value="forumCancun">FORUM CANCUN</option>
+                <option value="islaMeridaCaboNorte">LA ISLA MERIDA CABO NORTE</option>
+                <option value="islaCancun">LA ISLA CANCUN</option>
+                <option value="plazasOutletCancun">LAS PLAZAS OUTLET CANCUN</option>
+                <option value="plazasOutletGuadalajara">LAS PLAZAS OUTLET GUADALAJARA</option>
+                <option value="plazasOutletMonterrey">LAS PLAZAS OUTLET MONTERREY</option>
+                <option value="paseosCoapa">PASEOS COAPA</option>
+                <option value="paseosQueretaro">PASEOS QUERETARO</option>
+                <option value="paseosMetepec">PASEOS METEPEC</option>
+                <option value="paseosXochimilco">PASEOS XOCHIMILCO</option>
+            </select>
+            <hr/>
+        </div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/promocionesView/view.html');">
+            <img src="images/promociones-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Promociones</span>
+        </div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/novedadesView/view.html');">
+            <img src="images/novedades-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Novedades</span>
+        </div>
+        <div class="col-xs-12"><hr/></div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/eventosView/view.html');">
+            <img src="images/eventos-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Eventos</span>
+        </div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/tiendasView/view.html');">
+            <img src="images/tiendas-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Tiendas</span>
+        </div>
+        <div class="col-xs-12"><hr/></div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/contactoView/view.html');">
+            <img src="images/contacto-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Contacto</span>
+        </div>
+        <div class="col-xs-6 tac" style="border-right:1px solid #fff;" onclick="javascript:app.mobileApp.navigate('components/ubicacionView/view.html');">
+            <img src="images/ubication-icon.png" style="width:40%;cursor:pointer;"/><br/><br/>
+            <span style="color:white;cursor:pointer;">Ubicación</span>
+        </div>
+        <div class="col-xs-12"><hr/></div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2 tac"><img id="mailCentroIcon" src="images/mail-icon.png" style="width:100%;cursor:pointer;" /></div>
+        <div class="col-xs-2 tac"><img id="instagramCentroIcon" src="images/instagram-icon.png" style="width:100%;cursor:pointer;" /></div>
+        <div class="col-xs-2 tac"><img id="twitterCentroIcon" src="images/twitter-icon.png" style="width:100%;cursor:pointer;" /></div>
+        <div class="col-xs-2 tac"><img id="facebookCentroIcon" src="images/facebook-icon.png" style="width:100%;cursor:pointer;" /></div>
+        <div class="col-xs-2 tac"><img id="youtubeCentroIcon" src="images/youtube-icon.png" style="width:100%;cursor:pointer;" /></div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-12 tac" style="padding:20px 0px;color:white;">
+            <span>Gracias por suscribirte</span>
+        </div>
+    </div>
 </div>
